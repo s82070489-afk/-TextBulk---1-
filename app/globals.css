@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-zinc-100 font-sans text-zinc-700 antialiased;
+    letter-spacing: 0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-zinc-900;
+    letter-spacing: -0.02em;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .page-canvas {
+    @apply min-h-full bg-zinc-100 bg-page-texture;
+  }
+
+  .page-shell {
+    @apply px-4 py-14 sm:px-6 lg:py-20;
+  }
+
+  .page-surface {
+    @apply mx-auto rounded-2xl border border-zinc-200/70 bg-white px-7 py-12 shadow-surface sm:px-10 sm:py-14 lg:px-14 lg:py-16;
+  }
+
+  .page-surface--article {
+    @apply max-w-3xl;
+  }
+
+  .page-surface--wide {
+    @apply max-w-4xl;
+  }
+
+  .brand-mark {
+    @apply flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-accent-700 text-sm font-bold tracking-tight text-white shadow-card;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full border border-accent-200 bg-accent-50 px-3 py-1 text-[11px] font-medium tracking-wide text-accent-700;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-accent-800 px-5 py-2.5 text-sm font-medium tracking-wide text-white shadow-card transition hover:bg-accent-900 focus:outline-none focus:ring-2 focus:ring-accent-400 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium tracking-wide text-zinc-700 shadow-card transition hover:border-zinc-400 hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-zinc-300 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .card {
+    @apply relative overflow-hidden rounded-2xl border border-zinc-200/80 bg-white py-6 pr-6 pl-7 shadow-card;
+  }
+
+  .card::before {
+    content: "";
+    @apply absolute left-0 top-0 h-full w-1 bg-accent-500;
+  }
+
+  .card-step {
+    @apply mb-3 inline-flex h-6 w-6 items-center justify-center rounded-md bg-accent-100 text-[11px] font-semibold text-accent-800;
+  }
+
+  .prose-content {
+    @apply max-w-none text-zinc-600;
+  }
+
+  .prose-content h2 {
+    @apply mt-12 flex items-center gap-3 text-2xl font-semibold tracking-tight text-zinc-900;
+  }
+
+  .prose-content h2::before {
+    content: "";
+    @apply h-5 w-1 shrink-0 rounded-full bg-accent-500;
+  }
+
+  .prose-content h3 {
+    @apply mt-8 text-xl font-semibold tracking-tight text-zinc-900;
+  }
+
+  .prose-content p {
+    @apply leading-[1.85] tracking-wide;
+  }
+
+  .prose-content a {
+    @apply text-accent-800 underline decoration-accent-200 underline-offset-2 hover:decoration-accent-500;
+  }
+
+  .prose-content ul {
+    @apply list-disc space-y-3 pl-6 leading-[1.85] tracking-wide;
+  }
+
+  .prose-content pre {
+    @apply overflow-x-auto rounded-xl border border-zinc-200 bg-zinc-50 p-4 text-sm text-zinc-800;
+  }
+
+  .article-heading {
+    @apply flex items-center gap-3 text-xl font-semibold tracking-tight text-zinc-900;
+  }
+
+  .article-heading::before {
+    content: "";
+    @apply h-4 w-1 shrink-0 rounded-full bg-accent-500;
+  }
+
+  .article-body-text {
+    @apply text-[15px] leading-[1.85] tracking-wide text-zinc-600;
+  }
+
+  .feature-pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3.5 py-1.5 text-xs font-medium tracking-wide text-zinc-600;
+  }
+
+  .feature-pill-dot {
+    @apply h-1.5 w-1.5 rounded-full bg-accent-500;
+  }
+}
