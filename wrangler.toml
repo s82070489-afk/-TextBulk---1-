@@ -1,3 +1,7 @@
 name = "text-bulk"
-main = ".worker-bundle/index.js"
-compatibility_date = "2026-06-05"
+main = ".vercel/output/functions/_worker.js"
+compatibility_date = "2026-06-06"
+compatibility_flags = ["nodejs_compat"]
+
+[site]
+bucket = ".vercel/output/static"
