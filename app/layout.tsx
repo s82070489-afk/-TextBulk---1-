@@ -54,6 +54,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7365567211230692"
+     crossorigin="anonymous"></script>
+  
 verification: {
     google: "lD5b2sAQHhfofJmNxHKNlmILymqVwTmXejCtkD-Le5o",
     other: {
