@@ -54,11 +54,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  // 👇 이 부분이 metadata 내부로 정상적으로 쏙 들어왔습니다!
+  verification: {
+    google: "lD5b2sAQHhfofJmNxHKNlmILymqVwTmXejCtkD-Le5o",
+    naver: "44380ec3632858217c930095a304dcdbd2acd0de",
+  },
 };
-
-verification: {
-<meta name="google-site-verification" content="lD5b2sAQHhfofJmNxHKNlmILymqVwTmXejCtkD-Le5o" />
-<meta name="naver-site-verification" content="44380ec3632858217c930095a304dcdbd2acd0de" />
 
 export default function RootLayout({
   children,
