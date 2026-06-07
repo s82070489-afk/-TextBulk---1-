@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
+    <meta name="google-site-verification" content="lD5b2sAQHhfofJmNxHKNlmILymqVwTmXejCtkD-Le5o" />
     canonical: siteUrl,
   },
 };
