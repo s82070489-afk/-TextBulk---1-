@@ -55,6 +55,8 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
 };
+
+verification: {
 <meta name="google-site-verification" content="lD5b2sAQHhfofJmNxHKNlmILymqVwTmXejCtkD-Le5o" />
 <meta name="naver-site-verification" content="44380ec3632858217c930095a304dcdbd2acd0de" />
 
