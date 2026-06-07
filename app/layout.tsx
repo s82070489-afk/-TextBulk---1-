@@ -70,8 +70,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7365567211230692"
-     crossorigin="anonymous"></script>
+      <head>
+        {/* 👇 소문자 crossorigin을 Next.js용 카멜케이스(crossOrigin) 형식으로 변경했습니다! */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7365567211230692"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="flex min-h-screen flex-col font-sans">
         <header className="sticky top-0 z-50 border-b border-zinc-200/80 bg-white/85 backdrop-blur-md">
           <div className="mx-auto flex w-full max-w-5xl flex-col gap-5 px-4 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
