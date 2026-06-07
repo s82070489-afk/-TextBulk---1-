@@ -92,7 +92,7 @@ const articles = [
     ],
     contact: {
       service: `${APP_NAME} (${APP_NAME_EN})`,
-      email: "privacy@textbulk.app",
+      email: "leafory.com@gmail.com",
     },
   },
 ];
